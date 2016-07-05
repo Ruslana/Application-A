@@ -1,0 +1,11 @@
+%h1= @title
+%form{ :action => "/messages/create", :method => "post", :enctype => "multipart/form-data" }
+  %label Title:
+  %input#title{ :type => "text", :name => "message[title]" }
+  %label Text:
+  %input#text{ :type => "text", :name => "message[text]" }
+  %label User Name:
+  %input#user{ :type => "text", :name => "message[user]" }
+  %label email:
+  %input#email{ :type => "test", :name => "message[email]" }
+  %input{ :type => "submit" }
